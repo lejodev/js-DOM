@@ -1,0 +1,74 @@
+body, * {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+#box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 250px;
+  height: 250px;
+  background-color: #234;
+  margin: 2vh;
+}
+
+#box span {
+  color: white;
+}
+
+#square-container {
+  height: 300px;
+}
+
+#empty-box {
+  width: 250px;
+  height: 250px;
+  background-color: #84852c;
+  margin: 2vh;
+}
+
+#square-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#userForm {
+  width: 50vw;
+  height: 50vh;
+  padding: 5vh 5vw;
+  margin: 0 auto 5vh auto;
+  border-radius: 5px;
+  background-color: #155a63;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#userForm input[type=text], #userForm input[type=button] {
+  width: 100%;
+  margin: 0;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=style.css.map */
