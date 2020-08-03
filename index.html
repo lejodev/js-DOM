@@ -18,17 +18,32 @@
 
     <button id="addBtn" class="btn btn-primary" type="submit">ADD</button>
     <button id="deleteBtn" class="btn btn-primary" type="submit">DELETE</button>
+
     <div id="square-container"></div>
 
     <h2>Form (Objects)</h2>
     <form id="userForm">
         <label><input type="text" id="name" placeholder="Name" required></label>
+        <label><input type="number" id="personId" placeholder="id" required></label>
         <label><input type="text" id="residence" placeholder="Residence" required></label>
         <label><input type="text" id="hobby" placeholder='Hobby' required></label>
         <label><input type="text" id="work" placeholder="Work" required></label>
-        <input id="formSendBtn" type="button" value="SEND">
-        <input id="formSendBtn" type="button" value="DELETE">
+        <div class="buttons">
+            <!-- Pending to cards -->
+            <input type="button" id="formSendBtn" class="btn btn-primary" value="SEND">
+            <input type="button" id="searchBtn" class="btn btn-primary" value="SEARCH">
+            <input type="button" id="formSendBtn" class="btn btn-primary" value="DELETE">
+        </div>
     </form>
+
+    <h2>Mouse Over</h2>
+    <div class="mouseOverContainer">
+        <div class="mouseOver-box myBox"></div>
+        <div class="displayCount">
+            <h2>Counter</h2>
+            <p class="mouseOverCounter"></p>
+        </div>
+    </div>
 
     <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

@@ -66,9 +66,61 @@ h2 {
           justify-content: space-between;
 }
 
-#userForm input[type=text], #userForm input[type=button] {
+#userForm input[type=text], #userForm input[type=number] {
   width: 100%;
   margin: 0;
   border-radius: 5px;
+}
+
+#userForm .buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#userForm .buttons input {
+  width: 30%;
+  margin: 0;
+}
+
+.mouseOverContainer {
+  margin: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mouseOverContainer .myBox {
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+}
+
+.mouseOverContainer .mouseOver-box {
+  background-color: teal;
+}
+
+.mouseOverContainer .displayCount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.mouseOverContainer .displayCount p {
+  font-size: 40px;
+  font-style: oblique;
 }
 /*# sourceMappingURL=style.css.map */

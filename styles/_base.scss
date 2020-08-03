@@ -45,9 +45,44 @@ h2 {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    input[type=text], input[type=button] {
+    input[type=text], input[type=number] {
         width: 100%;
         margin: 0;
         border-radius: 5px;
+    }
+    .buttons {
+        // Pending to cards
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        input {
+            width: 30%;
+            margin: 0;
+        }
+    }
+}
+
+
+
+.mouseOverContainer {
+    margin: 2vh;
+    display: flex;
+    .myBox {
+        width: 250px;
+        height: 250px;
+        border: 2px solid black;
+    }
+    .mouseOver-box {
+        background-color: teal;
+    }
+    .displayCount{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        p {
+            font-size: 40px;
+            font-style: oblique;
+        }
     }
 }

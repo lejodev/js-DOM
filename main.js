@@ -36,18 +36,49 @@ class person {
     }
 }
 
-function getForm () {
-    var persons = [];
+class Person {
+    constructor(name, residence, hobby, work) {
+        this.name = name;
+        this.residence = residence;
+        this.hobby = hobby;
+        this.work = work;
+    }
+
+    presnt() {
+        alert(`The person with name: ${name} lives in ${residence}, likes ${hobby} and works in ${this.work}`)
+    }
+
+}
+// Set persons data to array of objects
+var persons = [];
+function sendPersonData () {
     var fName = document.getElementById('name').value;
     var fResidence = document.getElementById('residence').value;
     var fHobby = document.getElementById('hobby').value;
     var fWork = document.getElementById('work').value;
     if(fName && fResidence && fHobby && fWork) {
         alert(`${fName} ${fResidence} ${fHobby} ${fWork}`);
+        person = new Person(fName, fResidence, fHobby, fWork)
+        persons.push(person);
     } else {
         alert('All fields are mandatory')
     }
 }
 
 var sendBtn = document.getElementById('formSendBtn')
-sendBtn.addEventListener('click', getForm)
+sendBtn.addEventListener('click', sendPersonData)
+
+// Get persons from array
+// Pending to cards
+// function getPersonsData() {
+
+// }
+
+// MouseOver
+var mouseOverSquare = document.querySelector('.mouseOver-box')
+var mouseOverDOMElement = document.querySelector('.mouseOverCounter');
+var mouseOverCounter = 0;
+mouseOverSquare.addEventListener('mouseover', () => {
+    mouseOverCounter++;
+    mouseOverDOMElement.textContent = mouseOverCounter;
+})
